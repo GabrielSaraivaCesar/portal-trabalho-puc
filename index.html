@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/image-selector.css">
     <link rel="stylesheet" href="./assets/css/news.css">
+    <link rel="stylesheet" href="./assets/css/img-picker.css">
     <link rel="stylesheet" href="./assets/fontawasome/css/all.css">
     <title>Gabriel Saraiva</title>
 </head>
@@ -89,7 +90,7 @@
 
         <div class="col-7">
             <div class="row news-row">
-                <div class="col-6">
+                <div class="col-6" style="padding: 0;">
                     <div class="news-image-box" data-tag="Exclusivo" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
                 </div>
                 <div class="col-4 news-info-area">
@@ -108,11 +109,11 @@
                     </div>
 
                     <div class="section-actions">
-                        <div class="section-action selected">
+                        <div class="section-action selected" id="action-grid">
                             <i class="fas fa-th-large"></i> Grid
                         </div>
                         
-                        <div class="section-action">
+                        <div class="section-action" id="action-line">
                             <i class="fas fa-list"></i> Lista
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                 
             </div>
 
-            <div class="col-5 news-row">
+            <div class="col-5 news-row editable-col">
                 <div class="col-10">
 
                     <div class="news-title-seccondary">Sair do isolamento agora é querer voltar a mundo que não existe mais, diz virologista brasileiro</div>
@@ -137,7 +138,7 @@
                 </div>
             </div>
 
-            <div class="col-5 news-row">
+            <div class="col-5 news-row editable-col">
                 <div class="col-10">
 
                     <div class="news-title-seccondary">Guedes diz que 'fomos atingidos por um meteoro' e que pretende rolar dívida dos municípios</div>
@@ -154,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="col-5 news-row">
+            <div class="col-5 news-row editable-col">
                 <div class="col-10">
 
                     <div class="news-title-seccondary">Estudo liga quarentena à recuperação econômica mais rápida</div>
@@ -170,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 news-row">
+            <div class="col-5 news-row editable-col">
                 <div class="col-10">
 
                     <div class="news-title-seccondary">Brasil tem 31,3 milhões sem água encanada e 11,6 milhões em casas 'superlotadas'</div>
@@ -195,17 +196,21 @@
                         Labels
                     </div>
 
-                    <div class="section-actions">
-                        <div class="section-action selected">
-                            <i class="fas fa-th-large"></i> Grid
-                        </div>
-                        
-                        <div class="section-action">
-                            <i class="fas fa-list"></i> Lista
-                        </div>
+                    <div class="section-actions" id="labels-actions">
+         
                     </div>
                 </div>
                 
+                <div class="col-10">
+                    <div class="img-picker">
+                        <div class="img-action left"> <i class="fas fa-chevron-left"></i> </div>
+                        <div class="img-slider-container">  
+                            <div class="img-slider" id="img-picker-images">
+                            </div>
+                        </div>
+                        <div class="img-action right"> <i class="fas fa-chevron-right"></i> </div>
+                    </div>
+                </div>
             </div>
             
             
@@ -221,36 +226,38 @@
                 <div class="row">
                 <div class="col-rev-10-3 row">
                     <div class="col-6" style="padding: 0;">
-                        <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
+                        <div class="news-image-box-tiny" data-image="https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_2013-10-24t123038z_1465465632_pm1e9ao13oh01_rtrmadp_3_france-asterix.jpg"></div>
                     </div>
                     <div class="col-4 news-info-area-tiny">
                         <div class="news-info">
-                            <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            <div class="news-desc">Aluno de 56 anos morre com coronavírus, diz USP</div>
+                            <div class="news-title">O adeus ao cocriador de ‘Asterix e Obelix’</div>
+                            <div class="news-desc">Uderzo publicou, ao lado do roteirista René Goscinny (1926-1977), vinte e quatro livros da série Asterix
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-rev-10-3 row">
                     <div class="col-6"  style="padding: 0;">
-                        <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
+                        <div class="news-image-box-tiny" data-image="https://abrilexame.files.wordpress.com/2020/03/duffy.jpg?quality=70&strip=info&resize=680,453 680w, https://abrilexame.files.wordpress.com/2020/03/duffy.jpg?quality=70&strip=all&resize=420,280 420w, https://abrilexame.files.wordpress.com/2020/03/duffy.jpg?quality=70&strip=all&resize=360,240 360w, "></div>
                     </div>
                     <div class="col-4 news-info-area-tiny">
                         <div class="news-info">
-                            <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            <div class="news-desc">Aluno de 56 anos morre com coronavírus, diz USP</div>
+                            <div class="news-title">Após revelar ter sofrido estupro, Duffy mostra nova música                            </div>
+                            <div class="news-desc">Segunda a cantora, Something Beautiful foi composta para "levantar espíritos nestes tempos atribulados", se referindo ao isolamento pelo ccoronavírus
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-rev-10-3 row">
                     <div class="col-6"  style="padding: 0;">
-                        <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
+                        <div class="news-image-box-tiny" data-image="https://abrilexame.files.wordpress.com/2020/03/urn_newsml_afp.com_20200312_27d1b49b-365e-4066-81e8-139f7881a1d9_mmdhighdef.jpg"></div>
                     </div>
                     <div class="col-4 news-info-area-tiny">
                         <div class="news-info">
-                            <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            <div class="news-desc">Aluno de 56 anos morre com coronavírus, diz USP</div>
+                            <div class="news-title">Quarentena inspira artistas pelo mundo</div>
+                            <div class="news-desc">Ponzi é um dos artistas que têm retratado cidades impactadas pela quarentena</div>
                         </div>
                     </div>
                 </div>
@@ -258,70 +265,17 @@
             <div class="row">
                 <div class="section-card">
                     <div class="section-card-tag">
-                        The store
+                        Álbuns
                     </div>
+                    <div id="audio-area" data-title="Courtney Barnett - Avant Gardener">
+                        <audio controls id="audio-provider">
+                            <source id="audio-source" src="./assets/audio/avantg.m4a" style="width: 100%;" type="audio/mpeg"> 
+                        </audio>
+                    </div>
+                   
                 </div>
-                <div class="row">
-                    <div class="col-rev-5-3" >
-                        <div class="col-10"  style="padding: 0;">
-                            <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
-                        </div>
-                        <div class="col-10 news-info-area-tiny">
-                            <div class="news-info">
-                                <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-rev-5-3" style="padding-left: 5px;">
-                        <div class="col-10"  style="padding: 0;">
-                            <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
-                        </div>
-                        <div class="col-10 news-info-area-tiny">
-                            <div class="news-info">
-                                <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-rev-5-3" >
-                        <div class="col-10"  style="padding: 0;">
-                            <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
-                        </div>
-                        <div class="col-10 news-info-area-tiny">
-                            <div class="news-info">
-                                <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-rev-5-3" style="padding-left: 5px;">
-                        <div class="col-10"  style="padding: 0;">
-                            <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
-                        </div>
-                        <div class="col-10 news-info-area-tiny">
-                            <div class="news-info">
-                                <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-rev-5-3" >
-                        <div class="col-10"  style="padding: 0;">
-                            <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
-                        </div>
-                        <div class="col-10 news-info-area-tiny">
-                            <div class="news-info">
-                                <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-rev-5-3" style="padding-left: 5px;">
-                        <div class="col-10"  style="padding: 0;">
-                            <div class="news-image-box-tiny" data-image="https://s2.glbimg.com/QXX_Getjucv4Vh1RyZmIgjQ862Q=/127x0:1138x570/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/o/L/sKBqrmQVAHZJWFGOYAdA/8440838.jpg"></div>
-                        </div>
-                        <div class="col-10 news-info-area-tiny">
-                            <div class="news-info">
-                                <div class="news-title">Isolamento está ajudando a evitar o contágio em SP, diz estudo</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="songs-area">
+                    
                 </div>
                 
             </div>
@@ -334,8 +288,9 @@
 
     
 </body>
-
 <script src="./assets/js/image-selector.js"></script>
+<script src="./assets/js/songs.js"></script>
 <script src="./assets/js/news.js"></script>
 <script src="./assets/js/menu.js"></script>
+<script src="./assets/js/img-picker.js"></script>
 </html>

@@ -4,6 +4,8 @@
     display: flex;
     position: relative;
     margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .image-selector-arrow-left, .image-selector-arrow-right {
     width: 10%;

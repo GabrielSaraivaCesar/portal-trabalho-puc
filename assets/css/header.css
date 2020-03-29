@@ -72,6 +72,7 @@ header {
     flex-direction: column;
     width: 100%;
     animation: baloom-anim1 0.5s;
+    border-radius: 5px;
 }
 .options-baloom.header-baloom {
     position: absolute;
