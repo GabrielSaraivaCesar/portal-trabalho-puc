@@ -1,0 +1,53 @@
+.image-selector {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+.image-selector-arrow-left, .image-selector-arrow-right {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    z-index: 5;
+}
+.image-selector-arrow-left {
+    left: 0;
+}
+.image-selector-arrow-right {
+    right: 0;
+}
+.image-selector-image {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 50% !important;
+}
+.filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.46);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    color: white;
+}
+
+#image-title {
+    margin-bottom: 10px;
+}
+#image-desc {
+    font-weight: 100;
+}

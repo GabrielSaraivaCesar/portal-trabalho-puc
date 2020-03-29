@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3e71dc;
+    --secondary: #7a9fff;
+    --dark: #0047aa;
+}
+.container {
+    padding: 98px 50px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-10 {
+    width: 100%;
+}
+.col-9 {
+    width: 90%;
+}
+.col-8 {
+    width: 80%;
+}
+.col-7 {
+    width: 70%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-5 {
+    width: 50%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-3 ,.col-xl-3 {
+    width: 30%;
+}
+.col-2 {
+    width: 20%;
+}
+.col-1 {
+    width: 10%;
+}
+.col-rev-10-3 {
+    width: 100%;
+}
+.col-rev-5-3 {
+    width: 50%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 ,  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    position: relative;
+    padding: 0 10px;
+} 
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    height: auto;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+
+
+@media (max-width: 768px) {
+    .col-6, .col-7, .col-8, .col-9, .col-10, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10{
+        width: 100%;
+    }
+    .col-rev-10-3, .col-rev-5-3 {
+        width: 30%;
+        padding-left: 0;
+    }
+
+    .container {
+        padding: 98px 10px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 {
+        width: 100%;
+    }
+    .col-rev-10-3, .col-rev-5-3 {
+        width: 50%;
+        padding-left: 0;
+    }
+    .container {
+        padding: 98px 10px 20px;
+    }
+}
